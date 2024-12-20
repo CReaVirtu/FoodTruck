@@ -1,27 +1,50 @@
-# React + TypeScript + Vite
+# FoodTruck  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**FoodTruck** — это веб-приложение, созданное с использованием **React**, **TypeScript** и **Vite**. Приложение предлагает функциональность интернет-магазина с авторизацией, корзиной и навигацией.  
 
-Currently, two official plugins are available:
+## Демо  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ознакомиться с демо-версией проекта можно по ссылке:  
+[FoodTruck Demo](https://rina2316.github.io/FoodTruck/)  
 
-## Expanding the ESLint configuration
+## Функционал  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Регистрация**: Страница регистрации доступна для пользователей, которые еще не зарегистрированы.  
+- **Авторизация**: Зарегистрированные пользователи могут войти в приложение через страницу авторизации.  
+- **Главная страница**: Здесь отображается список продуктов.  
+- **Корзина**:  
+  - На карточке продукта есть кнопка для добавления товара в корзину.  
+  - Содержимое корзины отображается на отдельной странице, доступной через сайдбар.  
+- **Сайдбар**:  
+  - Включает навигацию по приложению.  
+  - Отображает информацию о пользователе.  
+  - Предоставляет возможность выхода из аккаунта.  
 
-- Configure the top-level `parserOptions` property like this:
+## Установка и запуск  
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+1. Клонируйте репозиторий:  
+   ```bash
+   git clone https://github.com/CReaVirtu/FoodTruck.git
+   cd FoodTruck
+   ```  
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Установите зависимости:  
+   ```bash
+   npm install
+   ```  
+
+3. Запустите проект в режиме разработки:  
+   ```bash
+   npm run dev
+   ```  
+
+4. Перейдите по адресу:  
+   ```
+   http://localhost:5173/
+   ```  
+
+## Используемый стек  
+
+- **React**  
+- **TypeScript**  
+- **Vite**  
